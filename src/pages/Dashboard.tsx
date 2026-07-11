@@ -118,8 +118,9 @@ export default function Dashboard() {
       }
       setShowModal(false);
       setEditingEmployee(null);
-    } catch {
-      showToast('Something went wrong saving the employee. Please try again.', 'error');
+    } catch (error: any) {
+      const message = error.response?.data?.message || 'Something went wrong saving the employee. Please try again.';
+      showToast(message, 'error');
     } finally {
       setSaving(false);
     }
@@ -270,6 +271,7 @@ export default function Dashboard() {
           }}
           onSave={handleSave}
           saving={saving}
+          employees={employees}
         />
       )}
 

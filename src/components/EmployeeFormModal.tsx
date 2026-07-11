@@ -7,6 +7,7 @@ interface Props {
   onClose: () => void;
   onSave: (data: Omit<Employee, 'id'>) => void;
   saving: boolean;
+  employees: Employee[];
 }
 
 const emptyForm: Omit<Employee, 'id'> = {
@@ -18,7 +19,7 @@ const emptyForm: Omit<Employee, 'id'> = {
   joiningDate: new Date().toISOString().split('T')[0],
 };
 
-export default function EmployeeFormModal({ employee, onClose, onSave, saving }: Props) {
+export default function EmployeeFormModal({ employee, onClose, onSave, saving, employees }: Props) {
   const [form, setForm] = useState(emptyForm);
   const [errors, setErrors] = useState<Record<string, string>>({});
 
@@ -37,9 +38,37 @@ export default function EmployeeFormModal({ employee, onClose, onSave, saving }:
 
   const validate = () => {
     const errs: Record<string, string> = {};
-    if (!form.name.trim()) errs.name = 'Name is required';
-    if (!form.email.trim()) errs.email = 'Email is required';
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) errs.email = 'Invalid email format';
+    const nameTrimmed = form.name.trim();
+    const emailTrimmed = form.email.trim();
+
+    if (!nameTrimmed) {
+      errs.name = 'Name is required';
+    } else {
+      const nameExists = employees.some(
+        (emp) =>
+          emp.name.trim().toLowerCase() === nameTrimmed.toLowerCase() &&
+          (!employee || emp.id !== employee.id)
+      );
+      if (nameExists) {
+        errs.name = 'An employee with this name already exists';
+      }
+    }
+
+    if (!emailTrimmed) {
+      errs.email = 'Email is required';
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailTrimmed)) {
+      errs.email = 'Invalid email format';
+    } else {
+      const emailExists = employees.some(
+        (emp) =>
+          emp.email.trim().toLowerCase() === emailTrimmed.toLowerCase() &&
+          (!employee || emp.id !== employee.id)
+      );
+      if (emailExists) {
+        errs.email = 'An employee with this email address already exists';
+      }
+    }
+
     if (!form.department) errs.department = 'Department is required';
     if (!form.designation.trim()) errs.designation = 'Designation is required';
     if (!form.joiningDate) errs.joiningDate = 'Joining date is required';

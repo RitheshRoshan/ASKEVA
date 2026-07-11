@@ -142,6 +142,27 @@ apiClient.defaults.adapter = async (config) => {
     // 4. Employees Routing: POST /employees
     if (cleanUrl === '/employees' && method?.toUpperCase() === 'POST') {
       const list = getStoredEmployees();
+      const { name, email } = parsedData || {};
+
+      if (list.some((emp: any) => emp.email.toLowerCase() === email?.toLowerCase())) {
+        throw {
+          response: {
+            status: 400,
+            statusText: 'Bad Request',
+            data: { message: 'An employee with this email already exists.' },
+          },
+        };
+      }
+      if (list.some((emp: any) => emp.name.toLowerCase() === name?.toLowerCase())) {
+        throw {
+          response: {
+            status: 400,
+            statusText: 'Bad Request',
+            data: { message: 'An employee with this name already exists.' },
+          },
+        };
+      }
+
       // Generate ID
       const maxId = list.reduce((max: number, e: any) => (e.id > max ? e.id : max), 0);
       const nextId = maxId + 1;
@@ -177,6 +198,26 @@ apiClient.defaults.adapter = async (config) => {
             status: 404,
             statusText: 'Not Found',
             data: { message: 'Employee not found' },
+          },
+        };
+      }
+
+      const { name, email } = parsedData || {};
+      if (list.some((emp: any) => emp.id !== targetId && emp.email.toLowerCase() === email?.toLowerCase())) {
+        throw {
+          response: {
+            status: 400,
+            statusText: 'Bad Request',
+            data: { message: 'An employee with this email already exists.' },
+          },
+        };
+      }
+      if (list.some((emp: any) => emp.id !== targetId && emp.name.toLowerCase() === name?.toLowerCase())) {
+        throw {
+          response: {
+            status: 400,
+            statusText: 'Bad Request',
+            data: { message: 'An employee with this name already exists.' },
           },
         };
       }
