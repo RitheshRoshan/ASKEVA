@@ -27,7 +27,7 @@ export default function EmployeeTable({ employees, onEdit, onDelete, onView }: P
   return (
     <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-xs flex-initial flex flex-col min-h-0">
       <div className="overflow-auto">
-        <table className="w-full text-sm text-slate-650 border-collapse">
+        <table className="w-full text-sm text-slate-650 border-collapse min-w-[900px]">
           <thead>
             <tr className="bg-slate-50/95 backdrop-blur-xs border-b border-slate-200 sticky top-0 z-10 shadow-sm shadow-slate-100/50">
               <th className="text-left px-5 py-3.5 font-bold text-xs uppercase tracking-wider text-slate-600">Name</th>
@@ -73,7 +73,7 @@ export default function EmployeeTable({ employees, onEdit, onDelete, onView }: P
                   <div className="flex items-center justify-end gap-1.5">
                     <button
                       onClick={() => onView(emp)}
-                      className="p-1.5 rounded-lg text-slate-400 hover:text-blue-600 hover:bg-blue-50 transition-colors focus:outline-none"
+                      className="p-1.5 rounded-lg text-slate-400 hover:text-blue-600 hover:bg-blue-50 transition-colors focus:outline-none cursor-pointer"
                       title="View details"
                     >
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -84,7 +84,7 @@ export default function EmployeeTable({ employees, onEdit, onDelete, onView }: P
 
                     <button
                       onClick={() => onEdit(emp)}
-                      className="p-1.5 rounded-lg text-slate-400 hover:text-indigo-600 hover:bg-indigo-50 transition-colors focus:outline-none"
+                      className="p-1.5 rounded-lg text-slate-400 hover:text-indigo-600 hover:bg-indigo-50 transition-colors focus:outline-none cursor-pointer"
                       title="Edit employee"
                     >
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -94,7 +94,7 @@ export default function EmployeeTable({ employees, onEdit, onDelete, onView }: P
 
                     <button
                       onClick={() => onDelete(emp)}
-                      className="p-1.5 rounded-lg text-slate-400 hover:text-rose-600 hover:bg-rose-50 transition-colors focus:outline-none"
+                      className="p-1.5 rounded-lg text-slate-400 hover:text-rose-600 hover:bg-rose-50 transition-colors focus:outline-none cursor-pointer"
                       title="Delete employee"
                     >
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

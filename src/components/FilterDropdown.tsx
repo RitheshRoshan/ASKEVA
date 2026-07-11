@@ -11,7 +11,7 @@ export default function FilterDropdown({ label, value, options, onChange }: Prop
       <select
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="appearance-none text-sm bg-white border border-slate-200 rounded-xl pl-4 pr-9 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 text-slate-700 transition-all cursor-pointer shadow-2xs font-medium w-full sm:w-auto"
+        className="appearance-none text-base bg-white border border-slate-200 rounded-xl pl-4 pr-9 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 text-slate-700 transition-all cursor-pointer shadow-2xs font-medium w-full sm:w-auto"
       >
         <option value="">All {label}</option>
         {options.map((opt) => (

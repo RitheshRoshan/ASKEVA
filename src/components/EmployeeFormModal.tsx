@@ -142,7 +142,7 @@ export default function EmployeeFormModal({ employee, onClose, onSave, saving, e
                 <select
                   value={form.department}
                   onChange={(e) => handleChange('department', e.target.value)}
-                  className={`w-full appearance-none pl-4 pr-9 py-2.5 text-sm bg-slate-55 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 text-slate-805 transition-all cursor-pointer ${
+                  className={`w-full appearance-none pl-4 pr-9 py-2.5 text-base bg-slate-55 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 text-slate-805 transition-all cursor-pointer ${
                     errors.department ? 'border-red-400' : 'border-slate-200'
                   }`}
                 >
@@ -184,7 +184,7 @@ export default function EmployeeFormModal({ employee, onClose, onSave, saving, e
                 <select
                   value={form.status}
                   onChange={(e) => handleChange('status', e.target.value)}
-                  className="w-full appearance-none pl-4 pr-9 py-2.5 text-sm bg-slate-55 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 text-slate-850 text-slate-805 transition-all cursor-pointer"
+                  className="w-full appearance-none pl-4 pr-9 py-2.5 text-base bg-slate-55 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 text-slate-850 text-slate-805 transition-all cursor-pointer"
                 >
                   <option value="Active">Active</option>
                   <option value="Inactive">Inactive</option>
