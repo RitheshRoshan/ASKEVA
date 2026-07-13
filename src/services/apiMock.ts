@@ -40,7 +40,7 @@ getStoredEmployees();
 getStoredUsers();
 
 // Intercept Axios requests with a custom adapter
-apiClient.defaults.adapter = async (config) => {
+const mockAdapter: any = async (config: any) => {
   await delay(Math.random() * 300 + 200); // 200-500ms variable latency
 
   const { url, method, data } = config;
@@ -297,5 +297,10 @@ apiClient.defaults.adapter = async (config) => {
 };
 
 export function initializeMockApi() {
+  if (import.meta.env.MODE === 'real') {
+    console.log('[API] Using real backend server.');
+    return;
+  }
+  apiClient.defaults.adapter = mockAdapter;
   console.log('[Mock API] Interceptor initialized successfully.');
 }

@@ -1,0 +1,732 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@company.com",
+      "password": "password123",
+      "name": "Admin User"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Emily Lopez",
+      "email": "emily.lopez@company.com",
+      "department": "Marketing",
+      "designation": "Marketing Manager",
+      "status": "Active",
+      "joiningDate": "2023-08-04"
+    },
+    {
+      "id": 2,
+      "name": "Michael Gonzalez",
+      "email": "michael.gonzalez@company.com",
+      "department": "Engineering",
+      "designation": "QA Engineer",
+      "status": "Active",
+      "joiningDate": "2024-06-05"
+    },
+    {
+      "id": 3,
+      "name": "Mary Jackson",
+      "email": "mary.jackson@company.com",
+      "department": "Finance",
+      "designation": "Controller",
+      "status": "Active",
+      "joiningDate": "2022-04-18"
+    },
+    {
+      "id": 4,
+      "name": "Patricia Lopez",
+      "email": "patricia.lopez@company.com",
+      "department": "Support",
+      "designation": "Customer Success",
+      "status": "Inactive",
+      "joiningDate": "2024-09-13"
+    },
+    {
+      "id": 5,
+      "name": "Thomas Lewis",
+      "email": "thomas.lewis@company.com",
+      "department": "Design",
+      "designation": "Creative Director",
+      "status": "Active",
+      "joiningDate": "2023-07-16"
+    },
+    {
+      "id": 6,
+      "name": "Mary Clark",
+      "email": "mary.clark@company.com",
+      "department": "Engineering",
+      "designation": "Software Engineer",
+      "status": "Inactive",
+      "joiningDate": "2023-07-04"
+    },
+    {
+      "id": 7,
+      "name": "Mary Sanchez",
+      "email": "mary.sanchez@company.com",
+      "department": "Engineering",
+      "designation": "Tech Lead",
+      "status": "Active",
+      "joiningDate": "2024-11-02"
+    },
+    {
+      "id": 8,
+      "name": "Carol Perez",
+      "email": "carol.perez@company.com",
+      "department": "Operations",
+      "designation": "Operations Manager",
+      "status": "Active",
+      "joiningDate": "2022-09-18"
+    },
+    {
+      "id": 9,
+      "name": "David Anderson",
+      "email": "david.anderson@company.com",
+      "department": "Sales",
+      "designation": "Business Development Rep",
+      "status": "Active",
+      "joiningDate": "2024-02-24"
+    },
+    {
+      "id": 10,
+      "name": "David Perez",
+      "email": "david.perez@company.com",
+      "department": "Finance",
+      "designation": "Financial Analyst",
+      "status": "Inactive",
+      "joiningDate": "2020-12-30"
+    },
+    {
+      "id": 11,
+      "name": "Dorothy Lopez",
+      "email": "dorothy.lopez@company.com",
+      "department": "Marketing",
+      "designation": "SEO Specialist",
+      "status": "Active",
+      "joiningDate": "2024-03-15"
+    },
+    {
+      "id": 12,
+      "name": "James Jackson",
+      "email": "james.jackson@company.com",
+      "department": "Marketing",
+      "designation": "SEO Specialist",
+      "status": "Active",
+      "joiningDate": "2023-06-12"
+    },
+    {
+      "id": 13,
+      "name": "Betty Garcia",
+      "email": "betty.garcia@company.com",
+      "department": "Design",
+      "designation": "UX Researcher",
+      "status": "Inactive",
+      "joiningDate": "2024-06-06"
+    },
+    {
+      "id": 14,
+      "name": "Carol Davis",
+      "email": "carol.davis@company.com",
+      "department": "Operations",
+      "designation": "Project Manager",
+      "status": "Active",
+      "joiningDate": "2020-02-29"
+    },
+    {
+      "id": 15,
+      "name": "Jessica Perez",
+      "email": "jessica.perez@company.com",
+      "department": "Finance",
+      "designation": "Controller",
+      "status": "Inactive",
+      "joiningDate": "2020-02-29"
+    },
+    {
+      "id": 16,
+      "name": "David Lee",
+      "email": "david.lee@company.com",
+      "department": "Support",
+      "designation": "Customer Success",
+      "status": "Active",
+      "joiningDate": "2022-03-28"
+    },
+    {
+      "id": 17,
+      "name": "Betty Ramirez",
+      "email": "betty.ramirez@company.com",
+      "department": "Sales",
+      "designation": "Sales Executive",
+      "status": "Active",
+      "joiningDate": "2021-08-08"
+    },
+    {
+      "id": 18,
+      "name": "Matthew Jackson",
+      "email": "matthew.jackson@company.com",
+      "department": "Support",
+      "designation": "Technical Support",
+      "status": "Active",
+      "joiningDate": "2021-03-23"
+    },
+    {
+      "id": 19,
+      "name": "Richard Garcia",
+      "email": "richard.garcia@company.com",
+      "department": "Operations",
+      "designation": "Operations Manager",
+      "status": "Active",
+      "joiningDate": "2020-03-16"
+    },
+    {
+      "id": 20,
+      "name": "David Rodriguez",
+      "email": "david.rodriguez@company.com",
+      "department": "Sales",
+      "designation": "Business Development Rep",
+      "status": "Inactive",
+      "joiningDate": "2021-06-01"
+    },
+    {
+      "id": 21,
+      "name": "Elizabeth Miller",
+      "email": "elizabeth.miller@company.com",
+      "department": "Marketing",
+      "designation": "Brand Manager",
+      "status": "Active",
+      "joiningDate": "2020-06-20"
+    },
+    {
+      "id": 22,
+      "name": "Steven Harris",
+      "email": "steven.harris@company.com",
+      "department": "HR",
+      "designation": "People Operations",
+      "status": "Active",
+      "joiningDate": "2020-09-06"
+    },
+    {
+      "id": 23,
+      "name": "Deborah Garcia",
+      "email": "deborah.garcia@company.com",
+      "department": "Support",
+      "designation": "Support Manager",
+      "status": "Active",
+      "joiningDate": "2023-01-17"
+    },
+    {
+      "id": 24,
+      "name": "Anthony Smith",
+      "email": "anthony.smith@company.com",
+      "department": "Marketing",
+      "designation": "Marketing Manager",
+      "status": "Active",
+      "joiningDate": "2020-11-03"
+    },
+    {
+      "id": 25,
+      "name": "Anthony Davis",
+      "email": "anthony.davis@company.com",
+      "department": "Sales",
+      "designation": "Sales Manager",
+      "status": "Active",
+      "joiningDate": "2024-06-20"
+    },
+    {
+      "id": 26,
+      "name": "Christopher Smith",
+      "email": "christopher.smith@company.com",
+      "department": "Finance",
+      "designation": "Financial Analyst",
+      "status": "Active",
+      "joiningDate": "2024-04-28"
+    },
+    {
+      "id": 27,
+      "name": "Elizabeth Martinez",
+      "email": "elizabeth.martinez@company.com",
+      "department": "Finance",
+      "designation": "Financial Analyst",
+      "status": "Active",
+      "joiningDate": "2022-11-18"
+    },
+    {
+      "id": 28,
+      "name": "William Garcia",
+      "email": "william.garcia@company.com",
+      "department": "Support",
+      "designation": "Support Manager",
+      "status": "Active",
+      "joiningDate": "2023-08-07"
+    },
+    {
+      "id": 29,
+      "name": "Michelle Martin",
+      "email": "michelle.martin@company.com",
+      "department": "HR",
+      "designation": "HR Manager",
+      "status": "Active",
+      "joiningDate": "2022-08-01"
+    },
+    {
+      "id": 30,
+      "name": "Paul Jackson",
+      "email": "paul.jackson@company.com",
+      "department": "Support",
+      "designation": "Support Manager",
+      "status": "Active",
+      "joiningDate": "2022-05-31"
+    },
+    {
+      "id": 31,
+      "name": "Sarah Perez",
+      "email": "sarah.perez@company.com",
+      "department": "Marketing",
+      "designation": "Content Strategist",
+      "status": "Active",
+      "joiningDate": "2022-12-05"
+    },
+    {
+      "id": 32,
+      "name": "Joshua Martin",
+      "email": "joshua.martin@company.com",
+      "department": "Operations",
+      "designation": "Scrum Master",
+      "status": "Active",
+      "joiningDate": "2024-01-10"
+    },
+    {
+      "id": 33,
+      "name": "Ashley Anderson",
+      "email": "ashley.anderson@company.com",
+      "department": "Engineering",
+      "designation": "QA Engineer",
+      "status": "Active",
+      "joiningDate": "2023-06-25"
+    },
+    {
+      "id": 34,
+      "name": "Emily Ramirez",
+      "email": "emily.ramirez@company.com",
+      "department": "Sales",
+      "designation": "Business Development Rep",
+      "status": "Active",
+      "joiningDate": "2022-06-30"
+    },
+    {
+      "id": 35,
+      "name": "Sandra Davis",
+      "email": "sandra.davis@company.com",
+      "department": "Operations",
+      "designation": "Scrum Master",
+      "status": "Active",
+      "joiningDate": "2023-07-26"
+    },
+    {
+      "id": 36,
+      "name": "Joseph Moore",
+      "email": "joseph.moore@company.com",
+      "department": "Design",
+      "designation": "Product Designer",
+      "status": "Inactive",
+      "joiningDate": "2021-08-27"
+    },
+    {
+      "id": 37,
+      "name": "Ashley Thomas",
+      "email": "ashley.thomas@company.com",
+      "department": "Design",
+      "designation": "Product Designer",
+      "status": "Active",
+      "joiningDate": "2023-07-08"
+    },
+    {
+      "id": 38,
+      "name": "Thomas Harris",
+      "email": "thomas.harris@company.com",
+      "department": "Finance",
+      "designation": "Accountant",
+      "status": "Inactive",
+      "joiningDate": "2022-02-06"
+    },
+    {
+      "id": 39,
+      "name": "Elizabeth Martinez",
+      "email": "elizabeth.martinez1@company.com",
+      "department": "Engineering",
+      "designation": "Senior Engineer",
+      "status": "Active",
+      "joiningDate": "2022-06-16"
+    },
+    {
+      "id": 40,
+      "name": "Joseph Jones",
+      "email": "joseph.jones@company.com",
+      "department": "Design",
+      "designation": "UX Researcher",
+      "status": "Inactive",
+      "joiningDate": "2021-11-24"
+    },
+    {
+      "id": 41,
+      "name": "Steven Lee",
+      "email": "steven.lee@company.com",
+      "department": "Engineering",
+      "designation": "Tech Lead",
+      "status": "Active",
+      "joiningDate": "2021-11-27"
+    },
+    {
+      "id": 42,
+      "name": "Nancy Perez",
+      "email": "nancy.perez@company.com",
+      "department": "Support",
+      "designation": "Support Specialist",
+      "status": "Active",
+      "joiningDate": "2021-08-07"
+    },
+    {
+      "id": 43,
+      "name": "John Ramirez",
+      "email": "john.ramirez@company.com",
+      "department": "Marketing",
+      "designation": "Brand Manager",
+      "status": "Active",
+      "joiningDate": "2020-03-24"
+    },
+    {
+      "id": 44,
+      "name": "Anthony Anderson",
+      "email": "anthony.anderson@company.com",
+      "department": "Operations",
+      "designation": "Project Manager",
+      "status": "Active",
+      "joiningDate": "2024-08-21"
+    },
+    {
+      "id": 45,
+      "name": "William Jackson",
+      "email": "william.jackson@company.com",
+      "department": "Marketing",
+      "designation": "Brand Manager",
+      "status": "Active",
+      "joiningDate": "2022-09-22"
+    },
+    {
+      "id": 46,
+      "name": "Carol Williams",
+      "email": "carol.williams@company.com",
+      "department": "Sales",
+      "designation": "Business Development Rep",
+      "status": "Active",
+      "joiningDate": "2023-09-04"
+    },
+    {
+      "id": 47,
+      "name": "Jessica Rodriguez",
+      "email": "jessica.rodriguez@company.com",
+      "department": "Finance",
+      "designation": "Controller",
+      "status": "Active",
+      "joiningDate": "2020-12-08"
+    },
+    {
+      "id": 48,
+      "name": "Ashley Miller",
+      "email": "ashley.miller@company.com",
+      "department": "Marketing",
+      "designation": "Marketing Manager",
+      "status": "Active",
+      "joiningDate": "2023-10-29"
+    },
+    {
+      "id": 49,
+      "name": "James Rodriguez",
+      "email": "james.rodriguez@company.com",
+      "department": "Engineering",
+      "designation": "DevOps Engineer",
+      "status": "Active",
+      "joiningDate": "2020-12-04"
+    },
+    {
+      "id": 50,
+      "name": "Sandra Rodriguez",
+      "email": "sandra.rodriguez@company.com",
+      "department": "Sales",
+      "designation": "Account Manager",
+      "status": "Active",
+      "joiningDate": "2021-04-04"
+    },
+    {
+      "id": 51,
+      "name": "Karen Ramirez",
+      "email": "karen.ramirez@company.com",
+      "department": "Design",
+      "designation": "Creative Director",
+      "status": "Active",
+      "joiningDate": "2023-04-19"
+    },
+    {
+      "id": 52,
+      "name": "Richard Smith",
+      "email": "richard.smith@company.com",
+      "department": "Operations",
+      "designation": "Business Analyst",
+      "status": "Active",
+      "joiningDate": "2023-11-04"
+    },
+    {
+      "id": 53,
+      "name": "Richard Harris",
+      "email": "richard.harris@company.com",
+      "department": "Sales",
+      "designation": "Sales Executive",
+      "status": "Active",
+      "joiningDate": "2024-05-29"
+    },
+    {
+      "id": 54,
+      "name": "Carol Lee",
+      "email": "carol.lee@company.com",
+      "department": "HR",
+      "designation": "HR Manager",
+      "status": "Active",
+      "joiningDate": "2024-01-09"
+    },
+    {
+      "id": 55,
+      "name": "Kenneth Rodriguez",
+      "email": "kenneth.rodriguez@company.com",
+      "department": "Engineering",
+      "designation": "QA Engineer",
+      "status": "Active",
+      "joiningDate": "2022-03-17"
+    },
+    {
+      "id": 56,
+      "name": "Lisa Davis",
+      "email": "lisa.davis@company.com",
+      "department": "Operations",
+      "designation": "Project Manager",
+      "status": "Active",
+      "joiningDate": "2020-01-29"
+    },
+    {
+      "id": 57,
+      "name": "Deborah Thomas",
+      "email": "deborah.thomas@company.com",
+      "department": "Engineering",
+      "designation": "Software Engineer",
+      "status": "Active",
+      "joiningDate": "2020-01-18"
+    },
+    {
+      "id": 58,
+      "name": "Andrew Lewis",
+      "email": "andrew.lewis@company.com",
+      "department": "Finance",
+      "designation": "Controller",
+      "status": "Active",
+      "joiningDate": "2024-01-09"
+    },
+    {
+      "id": 59,
+      "name": "Amanda Jones",
+      "email": "amanda.jones@company.com",
+      "department": "HR",
+      "designation": "Recruiter",
+      "status": "Active",
+      "joiningDate": "2022-01-05"
+    },
+    {
+      "id": 60,
+      "name": "Joseph Anderson",
+      "email": "joseph.anderson@company.com",
+      "department": "Operations",
+      "designation": "Scrum Master",
+      "status": "Active",
+      "joiningDate": "2024-01-26"
+    },
+    {
+      "id": 61,
+      "name": "Charles Martinez",
+      "email": "charles.martinez@company.com",
+      "department": "Support",
+      "designation": "Technical Support",
+      "status": "Active",
+      "joiningDate": "2022-09-23"
+    },
+    {
+      "id": 62,
+      "name": "Anthony Jackson",
+      "email": "anthony.jackson@company.com",
+      "department": "Operations",
+      "designation": "Operations Manager",
+      "status": "Inactive",
+      "joiningDate": "2020-11-09"
+    },
+    {
+      "id": 63,
+      "name": "Betty Jones",
+      "email": "betty.jones@company.com",
+      "department": "Design",
+      "designation": "Creative Director",
+      "status": "Active",
+      "joiningDate": "2022-12-08"
+    },
+    {
+      "id": 64,
+      "name": "Matthew Ramirez",
+      "email": "matthew.ramirez@company.com",
+      "department": "Design",
+      "designation": "UI Designer",
+      "status": "Active",
+      "joiningDate": "2023-11-21"
+    },
+    {
+      "id": 65,
+      "name": "Kevin Sanchez",
+      "email": "kevin.sanchez@company.com",
+      "department": "HR",
+      "designation": "HR Manager",
+      "status": "Active",
+      "joiningDate": "2022-06-13"
+    },
+    {
+      "id": 66,
+      "name": "Patricia Brown",
+      "email": "patricia.brown@company.com",
+      "department": "Marketing",
+      "designation": "Content Strategist",
+      "status": "Active",
+      "joiningDate": "2020-01-31"
+    },
+    {
+      "id": 67,
+      "name": "Ashley Clark",
+      "email": "ashley.clark@company.com",
+      "department": "Finance",
+      "designation": "Accountant",
+      "status": "Active",
+      "joiningDate": "2022-06-17"
+    },
+    {
+      "id": 68,
+      "name": "Sarah Rodriguez",
+      "email": "sarah.rodriguez@company.com",
+      "department": "Marketing",
+      "designation": "Marketing Manager",
+      "status": "Active",
+      "joiningDate": "2023-09-23"
+    },
+    {
+      "id": 69,
+      "name": "Lisa Rodriguez",
+      "email": "lisa.rodriguez@company.com",
+      "department": "Sales",
+      "designation": "Sales Executive",
+      "status": "Active",
+      "joiningDate": "2022-03-04"
+    },
+    {
+      "id": 70,
+      "name": "Emily Ramirez",
+      "email": "emily.ramirez1@company.com",
+      "department": "Sales",
+      "designation": "Business Development Rep",
+      "status": "Active",
+      "joiningDate": "2021-02-04"
+    },
+    {
+      "id": 71,
+      "name": "Timothy Ramirez",
+      "email": "timothy.ramirez@company.com",
+      "department": "HR",
+      "designation": "HR Coordinator",
+      "status": "Active",
+      "joiningDate": "2024-01-14"
+    },
+    {
+      "id": 72,
+      "name": "Susan Jones",
+      "email": "susan.jones@company.com",
+      "department": "Support",
+      "designation": "Technical Support",
+      "status": "Active",
+      "joiningDate": "2023-12-20"
+    },
+    {
+      "id": 73,
+      "name": "Jennifer Davis",
+      "email": "jennifer.davis@company.com",
+      "department": "Engineering",
+      "designation": "Software Engineer",
+      "status": "Active",
+      "joiningDate": "2022-11-26"
+    },
+    {
+      "id": 74,
+      "name": "Richard Thomas",
+      "email": "richard.thomas@company.com",
+      "department": "Marketing",
+      "designation": "Marketing Manager",
+      "status": "Active",
+      "joiningDate": "2023-04-29"
+    },
+    {
+      "id": 75,
+      "name": "Mark Harris",
+      "email": "mark.harris@company.com",
+      "department": "Design",
+      "designation": "Product Designer",
+      "status": "Active",
+      "joiningDate": "2023-07-31"
+    },
+    {
+      "id": 76,
+      "name": "Nancy Moore",
+      "email": "nancy.moore@company.com",
+      "department": "Support",
+      "designation": "Support Manager",
+      "status": "Inactive",
+      "joiningDate": "2024-04-24"
+    },
+    {
+      "id": 77,
+      "name": "Matthew Harris",
+      "email": "matthew.harris@company.com",
+      "department": "Operations",
+      "designation": "Business Analyst",
+      "status": "Active",
+      "joiningDate": "2021-01-15"
+    },
+    {
+      "id": 78,
+      "name": "Jessica Lopez",
+      "email": "jessica.lopez@company.com",
+      "department": "Operations",
+      "designation": "Scrum Master",
+      "status": "Active",
+      "joiningDate": "2022-02-07"
+    },
+    {
+      "id": 79,
+      "name": "Michael White",
+      "email": "michael.white@company.com",
+      "department": "Marketing",
+      "designation": "Marketing Manager",
+      "status": "Active",
+      "joiningDate": "2020-12-21"
+    },
+    {
+      "id": 80,
+      "name": "Linda Smith",
+      "email": "linda.smith@company.com",
+      "department": "Finance",
+      "designation": "Financial Analyst",
+      "status": "Inactive",
+      "joiningDate": "2024-07-14"
+    }
+  ]
+}
